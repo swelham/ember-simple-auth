@@ -68,5 +68,8 @@
     "@babel/plugin-transform-typescript": "~7.4.5",
     "cssstyle": "~1.2.2",
     "jsdom": "^11.10.0"
+  },
+  "ember": {
+    "edition": "octane"
   }
 }
