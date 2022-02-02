@@ -395,9 +395,7 @@ export default Service.extend(Evented, {
     this._setupIsCalled = true;
     try {
       this._setupHandlers();
-      await this.session.restore().catch(() => {
-        // Ignore errors when restoring the session
-      });
+      await this.session.restore();
     } catch (error) {
       // If it raises an error then it means that restore didn't find any restorable state.
     }
